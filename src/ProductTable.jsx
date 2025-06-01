@@ -6,7 +6,7 @@ const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8080/invoice/show")
+    fetch("https://inyecciondependencias.onrender.com/invoice/show")
       .then((res) => {
         if (!res.ok) throw new Error("Error al obtener los datos");
         return res.json();
